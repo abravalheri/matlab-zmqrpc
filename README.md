@@ -20,7 +20,27 @@ This project make use of two very good libraries [jsonlab](http://iso2mesh.sourc
 
 Create a folder named `sandbox` in the same level that the root folder for this project. Inside this folder put `*.json` files describing which functions may be called by RPC. These files must have the same name than the function, except from extension, and have two properties: `params` and `result`. `params` should be an array with the name of the parameters for the function and `result` should be an array with the name of the variables returned by the function.
 
-After doing this, the following command should be enough:
+For example:
+
+```
+* MATLAB
+|
+|--* sandbox
+|  |
+|  `-- int2str.json
+|
+`--* matlab-zmqrpc
+```
+
+```javascript
+// int2str.json
+{
+  "params": ["X"],
+  "result": ["S"]
+}
+```
+
+After doing this, starting the server should be enough to allow remote call of int2str built-in function:
 
 ```matlab
 zmqrpc.server
