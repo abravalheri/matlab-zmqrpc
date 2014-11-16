@@ -21,7 +21,9 @@ Communication is _always_ handy! If you have any doubt or would like to discuss 
 
 - Two spaces, no tabs - _It's a personal choice, I know... but it's good considering multiline alignment_ :smiling_imp:
 - No trailing whitespace. Blank lines should not have any space
-- Operators should be wrapped by spaces (`a = b`, `a + b`, ... and not `a=b`), but not parenthesis and brackets, especially in function call/declaration
+- Operators should be wrapped by spaces (`a = b`, `a + b`, ... and not `a=b`)
+- Parenthesis and brackets should not be wrapped by spaces, especially in function call/declaration (`plot(x, y)` and not `plot (x, y)`, `plot( x, y )`)
+- Commas should be followed by a space (`plot(x, y)` and not `plot(x,y)`)
 - I usually appreciate the code as shorter as possible, and I like 'one-line' `if`s, `for`s, etc... - _Hatters gonna hate_
 - Follow the conventions you see used in the source already - _The best tip so far_ :kissing_heart:
 
